@@ -6,11 +6,11 @@ import entity.Field;
 import entity.Word;
 
 
-public class CheckVictory {
+public class CheckVictory { // переназвать в VictoryChecker
 
-    static boolean error = true;
+    static boolean error = true;//убрать
 
-    public static boolean findLetter() {
+    public static boolean findLetter() { //принимать char, убрать static
         for (int i = 0; i < Word.wordSise; i++) {
             if (Word.word.charAt(i) == ConsoleGameInput.letter) {
                 Word.encryptedWord[i] = ConsoleGameInput.letter;
@@ -25,7 +25,7 @@ public class CheckVictory {
     }
 
     public static boolean takeLife() {
-        Field.remainingLives--;
+        Field.remainingLives--; //жизни надо хранить в переменной в Game
         if (Field.remainingLives == 0) {
             ConsoleGameOutput output = new ConsoleGameOutput();
             ConsoleGameInput input = new ConsoleGameInput();
