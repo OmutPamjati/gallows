@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 public class ConsoleGameOutput implements IGameOutput {
 
-     public void Start(char[] encryptedWord)
+     public void Start(char[] encryptedWord)//переименовать
      {
           System.out.println(Arrays.toString(encryptedWord) + "\n");
           System.out.println("У вас осталось " + Field.remainingLives + "жизней\n");

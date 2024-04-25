@@ -1,7 +1,7 @@
 package entity;
 
 public class Word {
-    public static String word;
+    public static String word;//всё сделать приватными и добавить get методы
     public static int wordSise;
     public static char[] encryptedWord;
 

@@ -25,7 +25,7 @@ public class Game {
 
         gameOutput.Start(Word.encryptedWord);
         gameInput.getLetter();
-        boolean checkResult = CheckVictory.findLetter();
+        boolean checkResult = CheckVictory.findLetter();//CheckVictory перенести в приватную переменную
 
         if(checkResult == false)
         {
